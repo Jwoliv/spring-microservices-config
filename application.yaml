@@ -1,0 +1,13 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:9000/eureka}
+
+logging:
+  level:
+    com:
+      netflix:
+        discovery: OFF
+        eureka: OFF
